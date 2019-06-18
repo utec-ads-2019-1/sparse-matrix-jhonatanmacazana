@@ -7,6 +7,7 @@ void Tester::execute() {
         unsigned int rows = mocker.generateRandomInt(10);
         unsigned int columns = mocker.generateRandomInt(10);
         testMatrix<int>(rows, columns);
+        printf("Matrix %d done\n", i);
     }
 }
 

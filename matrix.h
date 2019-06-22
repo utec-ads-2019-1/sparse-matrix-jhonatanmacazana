@@ -51,7 +51,7 @@ public:
 
     void set(int posx, int posy, T val)
     {
-        if(val == 0) return;
+        if(val == 0) return; // Entonces nunca se podrá settear el 0. 0 = remove
         if(this->operator()(posx, posy) != 0) return;
 
         auto newNode = new Node<T>(posx, posy, val);
